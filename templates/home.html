@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="container">
+  <div class="jumbotron">
+    <h1>Skill improver</h1>
+    <p>A platform for learning and sharing knowladge. </p>
+  </div>
+  {% if session.logged_in == NULL %}
+      <a href="/register" class="btn btn-primary btn-lg">Register</a>
+      <a href="/login" class="btn btn-success btn-lg">Login</a>
+  {% endif %}
+</div>
+
+{% endblock %}
